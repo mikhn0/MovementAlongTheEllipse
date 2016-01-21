@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lXU-VG-ex4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oval_line" translatesAutoresizingMaskIntoConstraints="NO" id="E0r-Ru-GJe">
+                                <rect key="frame" x="0.0" y="79" width="320" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yKO-UT-jny"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwR-7l-i4k" customClass="HorizontalScroller">
+                                <rect key="frame" x="0.0" y="20" width="320" height="118"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jwR-7l-i4k" secondAttribute="height" multiplier="160:59" id="CmS-Gf-ay6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt9-gQ-BmJ">
+                                <rect key="frame" x="69" y="146" width="182" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="UQ2-Ru-StW"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Color">
+                                        <attributes>
+                                            <color key="NSColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="25" name="Helvetica-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wrz-s7-46d">
+                                <rect key="frame" x="34" y="246" width="253" height="302"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="Y4J-QD-idG"/>
+                                    <constraint firstAttribute="width" constant="253" id="xZT-MP-8lJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Y4J-QD-idG"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wrz-s7-46d" secondAttribute="bottom" constant="20" id="6j5-zF-jNj"/>
+                            <constraint firstAttribute="trailing" secondItem="xt9-gQ-BmJ" secondAttribute="trailing" constant="69" id="AkA-Ma-1nx"/>
+                            <constraint firstItem="xt9-gQ-BmJ" firstAttribute="top" secondItem="jwR-7l-i4k" secondAttribute="bottom" constant="8" id="Bbw-aj-4JF"/>
+                            <constraint firstItem="Wrz-s7-46d" firstAttribute="top" secondItem="xt9-gQ-BmJ" secondAttribute="bottom" constant="8" id="GNI-U3-wHW"/>
+                            <constraint firstItem="xt9-gQ-BmJ" firstAttribute="centerX" secondItem="lXU-VG-ex4" secondAttribute="centerX" id="GWv-fd-jHs"/>
+                            <constraint firstAttribute="trailing" secondItem="E0r-Ru-GJe" secondAttribute="trailing" id="Nt9-nq-tlD"/>
+                            <constraint firstItem="xt9-gQ-BmJ" firstAttribute="leading" secondItem="lXU-VG-ex4" secondAttribute="leading" constant="69" id="OGL-rZ-w3y"/>
+                            <constraint firstAttribute="trailing" secondItem="jwR-7l-i4k" secondAttribute="trailing" id="Sy7-O1-FaI"/>
+                            <constraint firstItem="E0r-Ru-GJe" firstAttribute="top" secondItem="lXU-VG-ex4" secondAttribute="top" constant="79" id="YZV-55-f7l"/>
+                            <constraint firstItem="jwR-7l-i4k" firstAttribute="leading" secondItem="lXU-VG-ex4" secondAttribute="leading" id="ccA-eG-8Qv"/>
+                            <constraint firstAttribute="centerX" secondItem="jwR-7l-i4k" secondAttribute="centerX" id="fyU-FJ-JwK"/>
+                            <constraint firstItem="E0r-Ru-GJe" firstAttribute="leading" secondItem="lXU-VG-ex4" secondAttribute="leading" id="iKU-D9-wKf"/>
+                            <constraint firstAttribute="centerX" secondItem="Wrz-s7-46d" secondAttribute="centerX" constant="-0.5" id="nvz-bd-fgW"/>
+                            <constraint firstItem="jwR-7l-i4k" firstAttribute="top" secondItem="lXU-VG-ex4" secondAttribute="top" constant="20" id="wmf-BK-j8p"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="colorLabel" destination="xt9-gQ-BmJ" id="maD-lq-Zr1"/>
+                        <outlet property="ovalLineImageView" destination="E0r-Ru-GJe" id="BAe-34-kfy"/>
+                        <outlet property="scrollView" destination="jwR-7l-i4k" id="dMa-xE-wP7"/>
+                        <outlet property="textView" destination="Wrz-s7-46d" id="MCu-hd-8Cd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="215"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="oval_line" width="320" height="30"/>
+    </resources>
+</document>
